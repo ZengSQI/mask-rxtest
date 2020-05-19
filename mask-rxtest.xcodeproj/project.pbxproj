@@ -15,9 +15,14 @@
 		ADCBC331247426D700696EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCBC32F247426D700696EB4 /* LaunchScreen.storyboard */; };
 		ADCBC33C247426D700696EB4 /* mask_rxtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC33B247426D700696EB4 /* mask_rxtestTests.swift */; };
 		ADCBC347247426D700696EB4 /* mask_rxtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC346247426D700696EB4 /* mask_rxtestUITests.swift */; };
-		ADCBC356247429E500696EB4 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC355247429E500696EB4 /* CountryViewController.swift */; };
-		ADCBC35A24742B0F00696EB4 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC35924742B0F00696EB4 /* CountryViewModel.swift */; };
+		ADCBC356247429E500696EB4 /* CountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC355247429E500696EB4 /* CountyViewController.swift */; };
+		ADCBC35A24742B0F00696EB4 /* CountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC35924742B0F00696EB4 /* CountyViewModel.swift */; };
 		ADCBC35C24742B2700696EB4 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC35B24742B2700696EB4 /* ViewModelType.swift */; };
+		ADCBC35F2474314800696EB4 /* Pharmacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC35E2474314800696EB4 /* Pharmacy.swift */; };
+		ADCBC361247437C000696EB4 /* FeatureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC360247437C000696EB4 /* FeatureData.swift */; };
+		ADCBC36424743A4E00696EB4 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36324743A4E00696EB4 /* Target.swift */; };
+		ADCBC36724743F8000696EB4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */; };
+		ADCBC36B24744E9800696EB4 /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36A24744E9800696EB4 /* County.swift */; };
 		E3EF34E548AB9CB7BD03FFD4 /* Pods_mask_rxtestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121263BB18A5671AC296ED86 /* Pods_mask_rxtestTests.framework */; };
 		F408CB0F8A92F2AE3C408607 /* Pods_mask_rxtest_mask_rxtestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8781B8120EB43AFA635562 /* Pods_mask_rxtest_mask_rxtestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,9 +63,14 @@
 		ADCBC342247426D700696EB4 /* mask-rxtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mask-rxtestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCBC346247426D700696EB4 /* mask_rxtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mask_rxtestUITests.swift; sourceTree = "<group>"; };
 		ADCBC348247426D700696EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADCBC355247429E500696EB4 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
-		ADCBC35924742B0F00696EB4 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		ADCBC355247429E500696EB4 /* CountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountyViewController.swift; sourceTree = "<group>"; };
+		ADCBC35924742B0F00696EB4 /* CountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountyViewModel.swift; sourceTree = "<group>"; };
 		ADCBC35B24742B2700696EB4 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		ADCBC35E2474314800696EB4 /* Pharmacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharmacy.swift; sourceTree = "<group>"; };
+		ADCBC360247437C000696EB4 /* FeatureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureData.swift; sourceTree = "<group>"; };
+		ADCBC36324743A4E00696EB4 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		ADCBC36A24744E9800696EB4 /* County.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
 		B80AFB4622D35A00D5649483 /* Pods-mask-rxtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest.release.xcconfig"; path = "Target Support Files/Pods-mask-rxtest/Pods-mask-rxtest.release.xcconfig"; sourceTree = "<group>"; };
 		CB55AFE411ABA7A2B55D6C00 /* Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig"; path = "Target Support Files/Pods-mask-rxtest-mask-rxtestUITests/Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D02A08620D4D314FD805E9BC /* Pods-mask-rxtestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtestTests.release.xcconfig"; path = "Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,9 +157,12 @@
 				ADCBC326247426D500696EB4 /* SceneDelegate.swift */,
 				ADCBC354247429CC00696EB4 /* ViewController */,
 				ADCBC35824742ADC00696EB4 /* ViewModel */,
-				ADCBC32A247426D700696EB4 /* Assets.xcassets */,
+				ADCBC35D2474312500696EB4 /* Model */,
+				ADCBC36224743A2900696EB4 /* Service */,
+				ADCBC36524743F3600696EB4 /* Extension */,
 				ADCBC32F247426D700696EB4 /* LaunchScreen.storyboard */,
 				ADCBC332247426D700696EB4 /* Info.plist */,
+				ADCBC32A247426D700696EB4 /* Assets.xcassets */,
 				ADCBC32C247426D700696EB4 /* Preview Content */,
 			);
 			path = "mask-rxtest";
@@ -184,7 +197,7 @@
 		ADCBC354247429CC00696EB4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ADCBC355247429E500696EB4 /* CountryViewController.swift */,
+				ADCBC355247429E500696EB4 /* CountyViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -192,10 +205,36 @@
 		ADCBC35824742ADC00696EB4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				ADCBC35924742B0F00696EB4 /* CountryViewModel.swift */,
+				ADCBC35924742B0F00696EB4 /* CountyViewModel.swift */,
 				ADCBC35B24742B2700696EB4 /* ViewModelType.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ADCBC35D2474312500696EB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBC35E2474314800696EB4 /* Pharmacy.swift */,
+				ADCBC360247437C000696EB4 /* FeatureData.swift */,
+				ADCBC36A24744E9800696EB4 /* County.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADCBC36224743A2900696EB4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBC36324743A4E00696EB4 /* Target.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ADCBC36524743F3600696EB4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,10 +494,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCBC35F2474314800696EB4 /* Pharmacy.swift in Sources */,
+				ADCBC36B24744E9800696EB4 /* County.swift in Sources */,
 				ADCBC325247426D500696EB4 /* AppDelegate.swift in Sources */,
-				ADCBC35A24742B0F00696EB4 /* CountryViewModel.swift in Sources */,
-				ADCBC356247429E500696EB4 /* CountryViewController.swift in Sources */,
+				ADCBC35A24742B0F00696EB4 /* CountyViewModel.swift in Sources */,
+				ADCBC356247429E500696EB4 /* CountyViewController.swift in Sources */,
+				ADCBC361247437C000696EB4 /* FeatureData.swift in Sources */,
 				ADCBC35C24742B2700696EB4 /* ViewModelType.swift in Sources */,
+				ADCBC36424743A4E00696EB4 /* Target.swift in Sources */,
+				ADCBC36724743F8000696EB4 /* ActivityIndicator.swift in Sources */,
 				ADCBC327247426D500696EB4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
