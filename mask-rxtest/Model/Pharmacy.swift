@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Pharmacy: Codable {
+struct Pharmacy: Codable, Equatable {
   let id: String
   let name: String
   let phone: String
@@ -36,6 +36,4 @@ struct Pharmacy: Codable {
     case town
     case cunli
   }
-
-  
 }

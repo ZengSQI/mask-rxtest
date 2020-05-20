@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		754BB535F4FDCABB0676DFBD /* Pods_mask_rxtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104D094F887B09BD63A7F23D /* Pods_mask_rxtest.framework */; };
+		AD3893FA247592BB00B29539 /* CountySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3893F9247592BB00B29539 /* CountySection.swift */; };
 		ADCBC325247426D500696EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC324247426D500696EB4 /* AppDelegate.swift */; };
 		ADCBC327247426D500696EB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC326247426D500696EB4 /* SceneDelegate.swift */; };
 		ADCBC32B247426D700696EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCBC32A247426D700696EB4 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		2FB2193C9F9508567C98DEE8 /* Pods-mask-rxtest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest.debug.xcconfig"; path = "Target Support Files/Pods-mask-rxtest/Pods-mask-rxtest.debug.xcconfig"; sourceTree = "<group>"; };
 		32BA35062A05A20CF1961D73 /* Pods-mask-rxtest-mask-rxtestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest-mask-rxtestUITests.release.xcconfig"; path = "Target Support Files/Pods-mask-rxtest-mask-rxtestUITests/Pods-mask-rxtest-mask-rxtestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5699317F0F882A4F607B7C52 /* Pods-mask-rxtestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtestTests.debug.xcconfig"; path = "Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD3893F9247592BB00B29539 /* CountySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountySection.swift; sourceTree = "<group>"; };
 		ADCBC321247426D500696EB4 /* mask-rxtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mask-rxtest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCBC324247426D500696EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCBC326247426D500696EB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				ADCBC35E2474314800696EB4 /* Pharmacy.swift */,
 				ADCBC360247437C000696EB4 /* FeatureData.swift */,
 				ADCBC36A24744E9800696EB4 /* County.swift */,
+				AD3893F9247592BB00B29539 /* CountySection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				ADCBC35F2474314800696EB4 /* Pharmacy.swift in Sources */,
 				ADCBC36B24744E9800696EB4 /* County.swift in Sources */,
 				ADCBC325247426D500696EB4 /* AppDelegate.swift in Sources */,
+				AD3893FA247592BB00B29539 /* CountySection.swift in Sources */,
 				ADCBC35A24742B0F00696EB4 /* CountyViewModel.swift in Sources */,
 				ADCBC356247429E500696EB4 /* CountyViewController.swift in Sources */,
 				ADCBC361247437C000696EB4 /* FeatureData.swift in Sources */,

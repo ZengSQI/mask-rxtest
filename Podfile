@@ -8,7 +8,9 @@ target 'mask-rxtest' do
   # Pods for mask-rxtest
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'RxSwiftExt', '~> 5'
   pod 'Moya/RxSwift', '~> 14.0'
+  pod 'RxDataSources', '~> 4.0'
 
   target 'mask-rxtestTests' do
     inherit! :search_paths

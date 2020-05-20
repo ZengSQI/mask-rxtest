@@ -43,7 +43,9 @@ class CountyViewModel: ViewModelType {
         let adultMaskCount = value.reduce(0, { $0 + $1.adultMaskCount })
         let childMaskCount = value.reduce(0, { $0 + $1.childMaskCount })
         return County(name: key, adultMaskCount: adultMaskCount, childMaskCount: childMaskCount, pharmacies: value)
-      }}.bind(to: countiesRelay).disposed(by: disposeBag)
+        }}.map { $0.sorted { (lhs, rhs) -> Bool in
+          lhs.adultMaskCount > rhs.adultMaskCount
+        }}.bind(to: countiesRelay).disposed(by: disposeBag)
 
     return Output(isLoading: activityIndicator.asDriver(), countiesRelay: countiesRelay)
   }

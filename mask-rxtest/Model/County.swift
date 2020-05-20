@@ -6,7 +6,7 @@
 //  Copyright © 2020 zengsqi. All rights reserved.
 //
 
-struct County {
+struct County: Equatable {
   let name: String
   let adultMaskCount: Int
   let childMaskCount: Int
