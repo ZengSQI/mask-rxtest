@@ -10,34 +10,26 @@ import XCTest
 
 class mask_rxtestUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  var app: XCUIApplication!
+  var tableView: XCUIElement!
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
+  override func setUpWithError() throws {
+    app = XCUIApplication()
+    app.launch()
+    tableView = app.tables["tableView"]
+    continueAfterFailure = false
+  }
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+  func testTableViewDisplayData() throws {
+    sleep(2)
+    XCTAssertTrue(tableView.cells.count > 0)
+    let cell = tableView.cells.element(matching: .cell, identifier: "0")
+    let nameLabel = cell.children(matching: .staticText).element(matching: .staticText, identifier: "nameLabel")
+    let countLabel = cell.children(matching: .staticText).element(matching: .staticText, identifier: "countLabel")
+    XCTAssertNotNil(nameLabel.label)
+    XCTAssertNotEqual(nameLabel.label, "")
+    XCTAssertNotNil(countLabel.label)
+    XCTAssertNotEqual(countLabel.label, "")
+  }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
 }

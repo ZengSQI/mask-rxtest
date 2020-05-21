@@ -18,6 +18,7 @@ class CountyViewController: UIViewController {
 
   var tableView: UITableView = {
     let tableView = UITableView()
+    tableView.accessibilityIdentifier = "tableView"
     return tableView
   }()
 
@@ -34,8 +35,11 @@ class CountyViewController: UIViewController {
 
   let dataSource = RxTableViewSectionedReloadDataSource<CountySection>(configureCell: { (dataSource, tableView, indexPath, item) -> UITableViewCell in
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .value1, reuseIdentifier: "cell")
+    cell.accessibilityIdentifier = "\(indexPath.row)"
     cell.textLabel?.text = item.name.isEmpty ? "未分類" : item.name
+    cell.textLabel?.accessibilityIdentifier = "nameLabel"
     cell.detailTextLabel?.text = "成人：\(item.adultMaskCount)"
+    cell.detailTextLabel?.accessibilityIdentifier = "countLabel"
      return cell
    })
 
