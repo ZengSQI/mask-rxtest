@@ -34,7 +34,7 @@ extension Service: TargetType {
   var sampleData: Data {
     switch self {
     case .fetchFeatureData:
-      return Data()
+      return stubbedResponse("FeatureData")
     }
   }
 
@@ -49,5 +49,10 @@ extension Service: TargetType {
     return ["Content-type": "application/json"]
   }
 
-
+  func stubbedResponse(_ filename: String) -> Data! {
+    let bundlePath = Bundle.main.path(forResource: "Stubs", ofType: "bundle")
+    let bundle = Bundle(path: bundlePath!)
+    let path = bundle?.path(forResource: filename, ofType: "json")
+    return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
+  }
 }

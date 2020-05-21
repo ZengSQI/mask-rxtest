@@ -40,9 +40,10 @@ class CountyViewModel: ViewModelType {
 
     pharmacies.map { Dictionary(grouping: $0, by: { $0.county }) }
       .map { $0.map { key, value -> County in
+        let name = key.isEmpty ? "未分類" : key
         let adultMaskCount = value.reduce(0, { $0 + $1.adultMaskCount })
         let childMaskCount = value.reduce(0, { $0 + $1.childMaskCount })
-        return County(name: key, adultMaskCount: adultMaskCount, childMaskCount: childMaskCount, pharmacies: value)
+        return County(name: name, adultMaskCount: adultMaskCount, childMaskCount: childMaskCount, pharmacies: value)
         }}.map { $0.sorted { (lhs, rhs) -> Bool in
           lhs.adultMaskCount > rhs.adultMaskCount
         }}.bind(to: countiesRelay).disposed(by: disposeBag)

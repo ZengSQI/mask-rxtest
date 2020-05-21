@@ -24,6 +24,7 @@
 		ADCBC36424743A4E00696EB4 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36324743A4E00696EB4 /* Target.swift */; };
 		ADCBC36724743F8000696EB4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */; };
 		ADCBC36B24744E9800696EB4 /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBC36A24744E9800696EB4 /* County.swift */; };
+		ADEAEA8C24765FAE00836CE0 /* Stubs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADEAEA8B24765FAE00836CE0 /* Stubs.bundle */; };
 		E3EF34E548AB9CB7BD03FFD4 /* Pods_mask_rxtestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121263BB18A5671AC296ED86 /* Pods_mask_rxtestTests.framework */; };
 		F408CB0F8A92F2AE3C408607 /* Pods_mask_rxtest_mask_rxtestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8781B8120EB43AFA635562 /* Pods_mask_rxtest_mask_rxtestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		ADCBC36324743A4E00696EB4 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		ADCBC36A24744E9800696EB4 /* County.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
+		ADEAEA8B24765FAE00836CE0 /* Stubs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stubs.bundle; sourceTree = "<group>"; };
 		B80AFB4622D35A00D5649483 /* Pods-mask-rxtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest.release.xcconfig"; path = "Target Support Files/Pods-mask-rxtest/Pods-mask-rxtest.release.xcconfig"; sourceTree = "<group>"; };
 		CB55AFE411ABA7A2B55D6C00 /* Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig"; path = "Target Support Files/Pods-mask-rxtest-mask-rxtestUITests/Pods-mask-rxtest-mask-rxtestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D02A08620D4D314FD805E9BC /* Pods-mask-rxtestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mask-rxtestTests.release.xcconfig"; path = "Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,9 +163,10 @@
 				ADCBC35824742ADC00696EB4 /* ViewModel */,
 				ADCBC35D2474312500696EB4 /* Model */,
 				ADCBC36224743A2900696EB4 /* Service */,
-				ADCBC36524743F3600696EB4 /* Extension */,
+				ADCBC36524743F3600696EB4 /* Common */,
 				ADCBC32F247426D700696EB4 /* LaunchScreen.storyboard */,
 				ADCBC332247426D700696EB4 /* Info.plist */,
+				ADEAEA8B24765FAE00836CE0 /* Stubs.bundle */,
 				ADCBC32A247426D700696EB4 /* Assets.xcassets */,
 				ADCBC32C247426D700696EB4 /* Preview Content */,
 			);
@@ -232,12 +235,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		ADCBC36524743F3600696EB4 /* Extension */ = {
+		ADCBC36524743F3600696EB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				ADCBC36624743F8000696EB4 /* ActivityIndicator.swift */,
 			);
-			path = Extension;
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +273,7 @@
 				ADCBC333247426D700696EB4 /* Sources */,
 				ADCBC334247426D700696EB4 /* Frameworks */,
 				ADCBC335247426D700696EB4 /* Resources */,
-				FDCB986B6A224173A4A41CC2 /* [CP] Embed Pods Frameworks */,
+				03FF06CAB17B1031234EB7CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCBC331247426D700696EB4 /* LaunchScreen.storyboard in Resources */,
+				ADEAEA8C24765FAE00836CE0 /* Stubs.bundle in Resources */,
 				ADCBC32E247426D700696EB4 /* Preview Assets.xcassets in Resources */,
 				ADCBC32B247426D700696EB4 /* Assets.xcassets in Resources */,
 			);
@@ -373,6 +377,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03FF06CAB17B1031234EB7CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0FAB84B5FB501D7A67DCC5D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,23 +492,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mask-rxtest-mask-rxtestUITests/Pods-mask-rxtest-mask-rxtestUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDCB986B6A224173A4A41CC2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mask-rxtestTests/Pods-mask-rxtestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
